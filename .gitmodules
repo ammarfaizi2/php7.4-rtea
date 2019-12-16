@@ -1,0 +1,3 @@
+[submodule "ext/parallel"]
+	path = ext/parallel
+	url = https://github.com/krakjoe/parallel.git
