@@ -1,16 +1,13 @@
 
-sudo apt-get install libonig-dev libedit-dev -y
+sudo apt-get -y install autoconf libonig-dev libedit-dev bison re2c valgrind gdb sqlite3 libsqlite3-dev libffi-dev libsodium-dev libzip-dev libcurl4-openssl-dev libkrb5-dev libldap2-dev librtmp-dev libssh2-1-dev libbz2-dev libgd-dev
 
 ./configure \
 --enable-fpm \
 --enable-phpdbg \
 --with-valgrind \
---enable-gcov \
---enable-debug \
 --enable-sigchild \
 --with-openssl \
 --with-ffi \
---with-openssl \
 --enable-mbstring \
 --with-zlib \
 --enable-exif \
@@ -36,4 +33,12 @@ sudo apt-get install libonig-dev libedit-dev -y
 --enable-mysqlnd \
 --with-zip \
 --enable-maintainer-zts \
---with-tsrm-pthreads
+--with-curl \
+--with-zlib \
+--enable-bcmath \
+--enable-calendar \
+--with-system-ciphers \
+--with-tsrm-pthreads \
+--with-bz2 \
+--with-kerberos \
+--enable-pcntl
