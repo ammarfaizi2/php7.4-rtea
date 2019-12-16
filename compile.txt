@@ -1,0 +1,39 @@
+
+sudo apt-get install libonig-dev libedit-dev -y
+
+./configure \
+--enable-fpm \
+--enable-phpdbg \
+--with-valgrind \
+--enable-gcov \
+--enable-debug \
+--enable-sigchild \
+--with-openssl \
+--with-ffi \
+--with-openssl \
+--enable-mbstring \
+--with-zlib \
+--enable-exif \
+--enable-ftp \
+--with-xpm \
+--enable-gd \
+--with-external-gd \
+--with-webp \
+--with-jpeg \
+--with-xpm \
+--with-freetype \
+--enable-intl \
+--with-pdo-mysql \
+--with-readline \
+--with-libedit \
+--enable-shmop \
+--enable-sockets \
+--with-sodium \
+--enable-soap \
+--enable-sysvshm \
+--enable-sysvsem \
+--enable-sysvmsg \
+--enable-mysqlnd \
+--with-zip \
+--enable-maintainer-zts \
+--with-tsrm-pthreads
